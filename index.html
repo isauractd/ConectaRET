@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ConectaRET — Inicio</title>
+  <style>
+    :root{--bg:#f7fbff;--card:#ffffff;--accent:#2563eb;--muted:#6b7280}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#111}
+    .container{max-width:900px;margin:40px auto;padding:24px}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06);padding:32px;text-align:center}
+    h1{margin:0 0 12px;font-size:clamp(1.6rem,2.5vw,2.2rem)}
+    p.lead{color:var(--muted);margin:0 0 24px}
+    .logo{width:220px;height:220px;margin:0 auto 20px;display:block}
+    .cta{display:inline-block;padding:10px 18px;background:var(--accent);color:white;border-radius:8px;text-decoration:none}
+    footer{margin-top:18px;color:var(--muted);font-size:0.9rem}
+    @media (max-width:520px){.container{padding:16px}.card{padding:20px}.logo{width:160px;height:160px}}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <!-- Imagen SVG inline: logo simple para la página de inicio -->
+      <svg class="logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
+        <title id="logoTitle">Logotipo de ConectaRET</title>
+        <defs>
+          <linearGradient id="g" x1="0" x2="1">
+            <stop offset="0" stop-color="#06b6d4"/>
+            <stop offset="1" stop-color="#3b82f6"/>
+          </linearGradient>
+        </defs>
+        <rect width="120" height="120" rx="20" fill="url(#g)" />
+        <g transform="translate(20,30)" fill="#fff">
+          <path d="M0 38 L20 12 L40 38 Z" opacity="0.95"/>
+          <circle cx="60" cy="24" r="14" opacity="0.95"/>
+          <rect x="0" y="52" width="100" height="10" rx="3" opacity="0.9"/>
+        </g>
+      </svg>
+
+      <h1>Bienvenido a ConectaRET</h1>
+      <p class="lead">Esta es la página de inicio del proyecto. Aquí puedes colocar información de bienvenida, enlaces a la documentación y acceso rápido a las secciones principales.</p>
+
+      <a class="cta" href="#">Explorar el proyecto</a>
+
+      <footer>
+        Página generada automáticamente: index.html
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
